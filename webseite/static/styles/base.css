@@ -1,5 +1,6 @@
 body {
-	font-family: Open Sans;
+    font-family: Open Sans;
+    color: #4a4a4a;
 }
 
 nav.navbar {
@@ -13,11 +14,13 @@ nav.navbar {
     }
 
     .navbar-menu a {
-        color: black;
+        color: #4a4a4a;
+        font-weight: bold;
+        font-size: 26px;
     }
 
     .navbar-menu a:hover {
-        color: #317F99;
+        color: #1086ab;
         text-decoration: none !important;
     }
 
@@ -81,11 +84,11 @@ section header h1 {
 }
 
 section h2 {
-    color: #317F99;
+    color: #1086ab;
 }
 
 footer.jumbotron {
-    background-color: #317F99;
+    background-color: #1086ab;
     color: white;
     margin: 0;
 }
