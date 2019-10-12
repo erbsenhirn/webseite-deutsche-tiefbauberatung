@@ -29,6 +29,7 @@ SECRET_KEY = 'w%x$!38srkp!)z+=cj#nb6k9e-esn_x*d0@pq5s=n4l&@z)fb+'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'erbsenhirn.pythonanywhere.com',
 ]
 

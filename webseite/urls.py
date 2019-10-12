@@ -10,8 +10,6 @@ from django.contrib.sitemaps.views import sitemap
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
-from webseite.views import suche
-
 
 admin.autodiscover()
 
@@ -22,8 +20,6 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),
-    #url(r'^suche/', suche, name='suche'),
-    #url(r'^suche/', include('site_search.urls', 'search')),
     url(r'^', include('cms.urls')),
 )
 

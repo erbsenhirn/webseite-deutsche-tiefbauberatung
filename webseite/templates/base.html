@@ -5,32 +5,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <title>{% block title %}Deutsche Tiefbauberatung{% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <!--<style type="text/css">
-            nav {
-                padding-left: 0;
-            }
-            nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>-->
         {% bootstrap_css %}
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{% static "styles/base.css" %}">
         {% render_block "css" %}
     </head>
@@ -47,12 +24,6 @@
             <ul class="navbar-menu">
               {% show_menu 0 100 100 100 "menu.html" %}
             </ul>
-            <!--
-            <form class="form-inline my-2 my-lg-0" action="">
-              <input class="form-control mr-sm-2" type="search" placeholder="Suche" aria-label="Search" name="suche">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fas fa-search"></span></button>
-            </form>
-            -->
           </div>
 
         </nav>

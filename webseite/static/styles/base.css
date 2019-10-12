@@ -7,55 +7,55 @@ nav.navbar {
     height: 100px;
 }
 
-.navbar-menu {
-    display: flex;
-    list-style: none;
-}
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+    }
 
-.navbar-menu a {
-    color: black;
-}
+    .navbar-menu a {
+        color: black;
+    }
 
-.navbar-menu a:hover {
-    color: #317F99;
-	text-decoration: none !important;
-}
+    .navbar-menu a:hover {
+        color: #317F99;
+        text-decoration: none !important;
+    }
 
-.navbar-menu>.child {
-    margin-right: 10px;
-    position: relative;
-    text-transform: uppercase;
-    height: 30px;
-    padding: 5px;
-}
+    .navbar-menu>.child {
+        margin-right: 10px;
+        position: relative;
+        text-transform: uppercase;
+        height: 30px;
+        padding: 5px;
+    }
 
-.navbar-menu>.child ul {
-    list-style: none;
-    text-transform: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-color: white;
-    padding: 5px;
-	width: 100%;
-}
+    .navbar-menu>.child ul {
+        list-style: none;
+        text-transform: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background-color: white;
+        padding: 5px;
+        width: 100%;
+    }
 
-.navbar-menu>.child .child a{
-	width: 100%;
-	display: inline-block;
-}
+    .navbar-menu>.child .child a{
+        width: 100%;
+        display: inline-block;
+    }
 
-.navbar-menu>.child:not(:hover) .child {
-    display: none;
-}
+    .navbar-menu>.child:not(:hover) .child {
+        display: none;
+    }
 
-.dropdown-toggle, .dropdown-menu {
-    border: none !important;
-}
+    .dropdown-toggle, .dropdown-menu {
+        border: none !important;
+    }
 
-.dropdown-menu {
-    border-radius: 0;
-}
+    .dropdown-menu {
+        border-radius: 0;
+    }
 
 main {
     margin-top: 100px;
