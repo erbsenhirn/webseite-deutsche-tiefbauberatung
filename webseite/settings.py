@@ -159,12 +159,11 @@ INSTALLED_APPS = (
 
     'bootstrap4',
 
-    'haystack',
-    'aldryn_common',
-    'aldryn_search',
-    'standard_form',
-    'spurl',
-
+    #'haystack',
+    #'aldryn_common',
+    #'aldryn_search',
+    #'standard_form',
+    #'spurl',
     #'site_search',
 
     'webseite'
