@@ -28,8 +28,9 @@ SECRET_KEY = 'w%x$!38srkp!)z+=cj#nb6k9e-esn_x*d0@pq5s=n4l&@z)fb+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'erbsenhirn.pythonanywhere.com',
+]
 
 # Application definition
 
@@ -127,6 +128,7 @@ INSTALLED_APPS = (
     'cms',
     'menus',
     'sekizai',
+    'treebeard',
     'djangocms_text_ckeditor',
     'filer',
     'easy_thumbnails',
@@ -198,7 +200,7 @@ DATABASES = {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'project.db',
+        'NAME': os.path.join(BASE_DIR, 'project.db'),
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
