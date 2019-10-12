@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_messages %}
+
+{% block content %}
+
+  <section id="profil">
+      <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          {% placeholder "Profilueberschrift" %}
+        </div>
+      </header>
+      {% placeholder "Profilcontent" %}
+  </section>
+
+  <section id="team">
+      <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          {% placeholder "Teamueberschrift" %}
+        </div>
+      </header>
+      {% placeholder "Teamcontent" %}
+  </section>
+
+  <section id="mitgliedschaften">
+      <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          {% placeholder "Mitgliedschaftenueberschrift" %}
+        </div>
+      </header>
+      {% placeholder "mitgliedschaftencontent" %}
+  </section>
+
+{% endblock %}

@@ -1,0 +1,95 @@
+body {
+	font-family: Open Sans;
+}
+
+nav.navbar {
+    background-color: white;
+    height: 100px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: black;
+}
+
+.navbar-menu a:hover {
+    color: #317F99;
+	text-decoration: none !important;
+}
+
+.navbar-menu>.child {
+    margin-right: 10px;
+    position: relative;
+    text-transform: uppercase;
+    height: 30px;
+    padding: 5px;
+}
+
+.navbar-menu>.child ul {
+    list-style: none;
+    text-transform: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    padding: 5px;
+	width: 100%;
+}
+
+.navbar-menu>.child .child a{
+	width: 100%;
+	display: inline-block;
+}
+
+.navbar-menu>.child:not(:hover) .child {
+    display: none;
+}
+
+.dropdown-toggle, .dropdown-menu {
+    border: none !important;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+main {
+    margin-top: 100px;
+}
+
+section header {
+    background-image: url("../images/background.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#team header {
+    background-image: url("../images/bg2.jpg");
+}
+
+section header h1 {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+}
+
+section h2 {
+    color: #317F99;
+}
+
+footer.jumbotron {
+    background-color: #317F99;
+    color: white;
+    margin: 0;
+}
+
+.dropdown-toggle, section h1, section h2, main h2, footer h2 {
+    text-transform: uppercase;
+}
