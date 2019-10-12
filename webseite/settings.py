@@ -127,19 +127,16 @@ INSTALLED_APPS = (
     'cms',
     'menus',
     'sekizai',
-    'treebeard',
     'djangocms_text_ckeditor',
     'filer',
     'easy_thumbnails',
 
     'djangocms_column',
-    'djangocms_file',
     'djangocms_link',
     'djangocms_picture',
     'djangocms_style',
     'djangocms_snippet',
     'djangocms_googlemap',
-    'djangocms_video',
 
     'djangocms_bootstrap4',
     'djangocms_bootstrap4.contrib.bootstrap4_alerts',
@@ -156,15 +153,7 @@ INSTALLED_APPS = (
     'djangocms_bootstrap4.contrib.bootstrap4_picture',
     'djangocms_bootstrap4.contrib.bootstrap4_tabs',
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
-
     'bootstrap4',
-
-    #'haystack',
-    #'aldryn_common',
-    #'aldryn_search',
-    #'standard_form',
-    #'spurl',
-    #'site_search',
 
     'webseite'
 )
@@ -226,13 +215,3 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
-
-HAYSTACK_CONNECTIONS = {
-    'default': {
-        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
-    },
-}
-
-HAYSTACK_ROUTERS = ['aldryn_search.router.LanguageRouter', ]
-ALDRYN_SEARCH_REGISTER_APPHOOK = True
