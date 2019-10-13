@@ -5,8 +5,11 @@ from django.db.models import ImageField
 
 
 class HeadlinePluginModel(CMSPlugin):
-    text = models.CharField(max_length=128, default='Text der Überschrift')
+    text = models.CharField(max_length=128)
 
 class ParallaxPluginModel(CMSPlugin):
     bild = ImageField(upload_to='parallax-background-images/')
-    text = models.CharField(max_length=128, default='Text der Überschrift')
+    text = models.CharField(max_length=128)
+
+class SplitParagraphPluginModel(CMSPlugin):
+    text = models.TextField()

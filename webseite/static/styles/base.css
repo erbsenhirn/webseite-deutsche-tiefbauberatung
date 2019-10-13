@@ -70,6 +70,6 @@ footer.jumbotron {
     margin: 0;
 }
 
-.dropdown-toggle, footer h2 {
+footer h2 {
     text-transform: uppercase;
 }
