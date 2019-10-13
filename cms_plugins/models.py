@@ -9,7 +9,7 @@ class HeadlinePluginModel(CMSPlugin):
 
 class ParallaxPluginModel(CMSPlugin):
     bild = ImageField(upload_to='parallax-background-images/')
-    text = models.CharField(max_length=128)
+    text = models.CharField(max_length=128, blank=True)
 
 class SplitParagraphPluginModel(CMSPlugin):
     text = models.TextField()
