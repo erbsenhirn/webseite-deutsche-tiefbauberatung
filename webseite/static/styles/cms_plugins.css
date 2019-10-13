@@ -5,6 +5,9 @@
     position: relative;
     background-attachment: fixed;
     width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .parallax h1 {
@@ -18,14 +21,22 @@
 .headline h2 {
     color: #1086ab;
     text-transform: uppercase;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.split-paragraph p {
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+@media (min-width: 768px) {
+    .split-paragraph p {
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
