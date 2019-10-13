@@ -64,45 +64,12 @@ main {
     margin-top: 100px;
 }
 
-section header {
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
-
-#kompetenzfelder-1 header {
-    background-image: url("../images/hintergrund-strasse.jpg");
-}
-
-section header h1 {
-    color: white;
-    position: absolute;
-    font-size: 52px;
-    bottom: 50px;
-}
-
-section h2 {
-    color: #1086ab;
-}
-
-.split-paragraph p {
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-    color: red;
-}
-
 footer.jumbotron {
     background-color: #1086ab;
     color: white;
     margin: 0;
 }
 
-.dropdown-toggle, section h1, section h2, main h2, footer h2 {
+.dropdown-toggle, footer h2 {
     text-transform: uppercase;
 }

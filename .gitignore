@@ -1,3 +1,7 @@
 /webseite/__pycache__/settings.cpython-34.pyc
 /webseite/__pycache__/urls.cpython-34.pyc
 /webseite/__pycache__/views.cpython-34.pyc
+__init__.cpython-34.pyc
+admin.cpython-34.pyc
+cms_plugins.cpython-34.pyc
+models.cpython-34.pyc

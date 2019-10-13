@@ -158,7 +158,8 @@ INSTALLED_APPS = (
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
     'bootstrap4',
 
-    'webseite'
+    'webseite',
+    'cms_plugins'
 )
 
 LANGUAGES = (
