@@ -16,5 +16,3 @@ html5lib==1.0.1
 Pillow>=3.0
 django-sekizai>=0.9
 six
-djangocms-bootstrap4
-django-bootstrap4

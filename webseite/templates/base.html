@@ -1,22 +1,20 @@
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
-{% load bootstrap4 %}
-{% bootstrap_messages %}
 <!doctype html>
 <html>
     <head>
         <title>{% block title %}Deutsche Tiefbauberatung{% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        {% bootstrap_css %}
-        <link rel="stylesheet" type="text/css" href="{% static "styles/base.css" %}">
-        <link rel="stylesheet" type="text/css" href="{% static "styles/cms_plugins.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/base.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/cms_plugins.css' %}">
         {% render_block "css" %}
     </head>
     <body>
         {% cms_toolbar %}
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">
-            <img src="{% static "images/logo-deutsche-tiefbauberatung.png" %}" width="150" height="50" alt="Logo Deutsche Tiefbauberatung">
+            <img src="{% static 'images/logo-deutsche-tiefbauberatung.png' %}" width="150" height="50" alt="Logo Deutsche Tiefbauberatung">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +54,7 @@
               </div>
           </div>
       </footer>
-      {% bootstrap_javascript jquery='full' %}
-      {% render_block "js" %}
+      <script src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
+      <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
     </body>
 </html>
