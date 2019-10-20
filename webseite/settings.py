@@ -130,9 +130,6 @@ INSTALLED_APPS = (
     'menus',
     'sekizai',
     'treebeard',
-    'djangocms_text_ckeditor',
-    'filer',
-    'easy_thumbnails',
 
 
     'webseite',
