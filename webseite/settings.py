@@ -134,12 +134,6 @@ INSTALLED_APPS = (
     'filer',
     'easy_thumbnails',
 
-    'djangocms_column',
-    'djangocms_link',
-    'djangocms_picture',
-    'djangocms_style',
-    'djangocms_snippet',
-    'djangocms_googlemap',
 
     'webseite',
     'cms_plugins'
