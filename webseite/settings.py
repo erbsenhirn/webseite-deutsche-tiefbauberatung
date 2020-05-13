@@ -30,8 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'erbsenhirn.pythonanywhere.com',
-]
+    '*', 
+] # TODO: Secure this 
 
 # Application definition
 
@@ -133,7 +133,7 @@ INSTALLED_APPS = (
 
 
     'webseite',
-    'cms_plugins'
+    'cms_plugins',
 )
 
 LANGUAGES = (

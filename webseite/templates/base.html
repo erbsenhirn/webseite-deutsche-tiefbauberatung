@@ -1,7 +1,7 @@
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
 <!doctype html>
-<html>
+<html lang="de">
     <head>
         <title>{% block title %}Deutsche Tiefbauberatung{% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,7 +14,7 @@
         {% cms_toolbar %}
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">
-            <img src="{% static 'images/logo-deutsche-tiefbauberatung.png' %}" width="150" height="50" alt="Logo Deutsche Tiefbauberatung">
+            <img src="{% static 'images/logo-deutsche-tiefbauberatung.svg' %}" width="150" height="50" alt="Logo Deutsche Tiefbauberatung">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,30 +29,7 @@
           {% block content %}{% endblock content %}
         </main>
         <footer class="jumbotron jumbotron-fluid">
-          <div class="container">
-              <h2>Kontakt</h2>
-              <p><strong>Deutsche Tiefbauberatung</strong></p>
-              <div class="row">
-                  <div class="col-xs-12 col-sm-4">
-                      <ul class="list-unstyled">
-                          <li>Dipl.-Ing. (FH) Joachim Hamann Beratender Ingenieur für Straßen- und Tiefbau</li>
-                      </ul>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
-                      <ul class="list-unstyled">
-                          <li>Albersweiler Straße 85/87</li>
-                          <li>15366 Neuenhagen bei Berlin</li>
-                      </ul>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
-                      <ul class="list-unstyled">
-                          <li>Tel.: 03342-249 989 -0</li>
-                          <li>Fax: 03342-249 989 -5</li>
-                          <li>info@deutsche-tiefbauberatung.de</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
+          {% include 'footer.html' %}
       </footer>
       <script src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
       <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>

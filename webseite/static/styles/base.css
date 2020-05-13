@@ -1,6 +1,7 @@
 body {
     font-family: "Open Sans";
     color: #4a4a4a;
+    hyphens: auto;
 }
 
 nav.navbar {
@@ -72,4 +73,8 @@ footer.jumbotron {
 
 footer h2 {
     text-transform: uppercase;
+}
+
+footer a, footer a:hover {
+    color: white;
 }
