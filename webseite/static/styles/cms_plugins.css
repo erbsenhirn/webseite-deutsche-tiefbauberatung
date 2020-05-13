@@ -13,6 +13,7 @@
 @media (max-width: 767px) {
     .parallax {
         height: 200px;
+        background-attachment: scroll;
     }
 }
 
