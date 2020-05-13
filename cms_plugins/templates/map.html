@@ -1,0 +1,37 @@
+<div class="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <table class="legend-table">
+                    <tr>
+                        <td>
+                             <img class="legend-image" src="{{ instance.legende_1_bild.url }}" />
+                        </td>
+                        <td>
+                             {{ instance.legende_1_text }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <img class="legend-image" src="{{ instance.legende_2_bild.url }}" />
+                        </td>
+                        <td>
+                             {{ instance.legende_2_text }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <img class="legend-image" src="{{ instance.legende_3_bild.url }}" />
+                        </td>
+                        <td>
+                             {{ instance.legende_3_text }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-12 col-md-8 order-sm-first">
+                <img class="map-image" src="{{ instance.karte_bild.url }}" />
+            </div>
+        </div>
+    </div>
+</div>

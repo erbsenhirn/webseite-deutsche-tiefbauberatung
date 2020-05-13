@@ -2,7 +2,7 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from cms.models.pluginmodel import CMSPlugin
 
-from .models import HeadlinePluginModel, ParallaxPluginModel, SplitParagraphPluginModel
+from .models import HeadlinePluginModel, ParallaxPluginModel, SplitParagraphPluginModel, MapPluginModel
 
 @plugin_pool.register_plugin
 class HeadLinePlugin(CMSPluginBase):
@@ -34,4 +34,14 @@ class SplitParagraphPlugin(CMSPluginBase):
 
     def render(self, context, instance, placeholder):
         context = super(SplitParagraphPlugin, self).render(context, instance, placeholder)
+        return context
+        
+@plugin_pool.register_plugin
+class MapPlugin(CMSPluginBase):
+    name = 'Karte'
+    model = MapPluginModel
+    render_template = "map.html"
+
+    def render(self, context, instance, placeholder):
+        context = super(MapPlugin, self).render(context, instance, placeholder)
         return context

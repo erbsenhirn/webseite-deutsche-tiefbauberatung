@@ -69,3 +69,8 @@
         margin-bottom: 20px;
     }
 }
+
+.map .legend-table .legend-image {
+    width: 100px;
+    height: 100px;
+}
