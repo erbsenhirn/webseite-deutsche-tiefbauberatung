@@ -22,3 +22,17 @@ class MapPluginModel(CMSPlugin):
     legende_2_text = models.CharField(max_length=128)
     legende_3_bild = FileField(upload_to='map-images/') 
     legende_3_text = models.CharField(max_length=128)
+    
+class ListAndImagePluginModel(CMSPlugin):
+    ueberschrift = models.CharField(max_length=128)
+    bild = FileField(upload_to='list-images/') 
+    stichkpunkt_1 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_2 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_3 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_4 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_5 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_6 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_7 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_8 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_9 = models.CharField(max_length=1024, blank=True)
+    stichkpunkt_10 = models.CharField(max_length=1024, blank=True)

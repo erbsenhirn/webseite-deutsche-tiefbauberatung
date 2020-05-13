@@ -2,7 +2,7 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from cms.models.pluginmodel import CMSPlugin
 
-from .models import HeadlinePluginModel, ParallaxPluginModel, SplitParagraphPluginModel, MapPluginModel
+from .models import HeadlinePluginModel, ParallaxPluginModel, SplitParagraphPluginModel, MapPluginModel, ListAndImagePluginModel
 
 @plugin_pool.register_plugin
 class HeadLinePlugin(CMSPluginBase):
@@ -44,4 +44,14 @@ class MapPlugin(CMSPluginBase):
 
     def render(self, context, instance, placeholder):
         context = super(MapPlugin, self).render(context, instance, placeholder)
+        return context
+        
+@plugin_pool.register_plugin
+class ListAndImagePlugin(CMSPluginBase):
+    name = 'List und Bild'
+    model = ListAndImagePluginModel
+    render_template = "list-and-image.html"
+
+    def render(self, context, instance, placeholder):
+        context = super(ListAndImagePlugin, self).render(context, instance, placeholder)
         return context

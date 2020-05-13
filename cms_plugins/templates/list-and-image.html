@@ -1,0 +1,64 @@
+<div class="list-and-image container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <h2>
+                {{ instance.ueberschrift }}
+            </h2>
+            <ul>
+                {% if instance.stichkpunkt_1 %}
+                    <li>
+                        {{ instance.stichkpunkt_1 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_2 %}
+                    <li>
+                        {{ instance.stichkpunkt_2 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_3 %}
+                    <li>
+                        {{ instance.stichkpunkt_3 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_4 %}
+                    <li>
+                        {{ instance.stichkpunkt_4 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_5 %}
+                    <li>
+                        {{ instance.stichkpunkt_5 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_6 %}
+                    <li>
+                        {{ instance.stichkpunkt_6 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_7 %}
+                    <li>
+                        {{ instance.stichkpunkt_7 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_8 %}
+                    <li>
+                        {{ instance.stichkpunkt_8 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_9 %}
+                    <li>
+                        {{ instance.stichkpunkt_9 }}
+                    </li>
+                {% endif %}
+                {% if instance.stichkpunkt_10 %}
+                    <li>
+                        {{ instance.stichkpunkt_10 }}
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="{{ instance.bild.url }}" />
+        </div>
+    </div>
+</div>
