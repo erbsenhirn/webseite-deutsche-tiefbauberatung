@@ -73,6 +73,7 @@ footer.jumbotron {
 
 footer h2 {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 footer a, footer a:hover {
