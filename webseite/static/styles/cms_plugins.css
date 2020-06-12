@@ -78,10 +78,15 @@
     margin-bottom: 20px;
 }
 
+.map .legend-row {
+    cursor: pointer;
+}
+
 .map .legend-table .legend-image {
     width: 100px;
     height: 100px;
 }
+
 
 .list-and-image {
     margin-top: 20px;

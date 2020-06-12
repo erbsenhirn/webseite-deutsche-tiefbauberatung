@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'styles/base.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'styles/cms_plugins.css' %}">
+        <script src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
         {% render_block "css" %}
     </head>
     <body>
@@ -31,7 +32,6 @@
         <footer class="jumbotron jumbotron-fluid">
           {% include 'footer.html' %}
       </footer>
-      <script src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
       <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
     </body>
 </html>

@@ -15,11 +15,15 @@ class SplitParagraphPluginModel(CMSPlugin):
     text = models.TextField()
 
 class MapPluginModel(CMSPlugin):
-    karte_bild = FileField(upload_to='map-images/')
+    karte_1_bild = FileField(upload_to='map-images/')
     legende_1_bild = FileField(upload_to='map-images/') 
     legende_1_text = models.CharField(max_length=128)
+    
+    karte_2_bild = FileField(upload_to='map-images/')
     legende_2_bild = FileField(upload_to='map-images/') 
     legende_2_text = models.CharField(max_length=128)
+    
+    karte_3_bild = FileField(upload_to='map-images/')
     legende_3_bild = FileField(upload_to='map-images/') 
     legende_3_text = models.CharField(max_length=128)
     

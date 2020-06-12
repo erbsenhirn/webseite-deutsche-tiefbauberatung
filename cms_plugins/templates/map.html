@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12 col-md-4">
             <table class="legend-table">
-                <tr>
+                <tr class="legend-row" id="row-1">
                     <td>
                          <img class="legend-image" src="{{ instance.legende_1_bild.url }}" />
                     </td>
@@ -10,7 +10,7 @@
                          {{ instance.legende_1_text }}
                     </td>
                 </tr>
-                <tr>
+                <tr class="legend-row" id="row-2">
                     <td>
                          <img class="legend-image" src="{{ instance.legende_2_bild.url }}" />
                     </td>
@@ -18,7 +18,7 @@
                          {{ instance.legende_2_text }}
                     </td>
                 </tr>
-                <tr>
+                <tr class="legend-row" id="row-3">
                     <td>
                          <img class="legend-image" src="{{ instance.legende_3_bild.url }}" />
                     </td>
@@ -29,7 +29,47 @@
             </table>
         </div>
         <div class="col-xs-12 col-md-8 order-sm-first">
-            <img class="map-image" src="{{ instance.karte_bild.url }}" />
+            <img id="map-image" 
+            data-map-1="{{ instance.karte_1_bild.url }}"
+            data-map-2="{{ instance.karte_2_bild.url }}"
+            data-map-3="{{ instance.karte_3_bild.url }}"
+            src="{{ instance.karte_1_bild.url }}" />
         </div>
     </div>
+    <script type="text/javascript">
+        $(function(){
+            $( "#row-1" ).click( function() {
+                var new_url = $( "#map-image" ).attr( "data-map-1" ) ;
+                var current_url = $( "#map-image" ).attr( "src" );
+                
+                if (new_url != current_url) {
+                    $("#map-image").fadeTo(500,0.25, function() {
+                        $("#map-image").attr("src", new_url);
+                    }).fadeTo(250,1);
+                }
+            });
+            
+            $( "#row-2" ).click( function() {
+                var new_url = $( "#map-image" ).attr( "data-map-2" ) ;
+                var current_url = $( "#map-image" ).attr( "src" );
+                
+                if (new_url != current_url) {
+                    $("#map-image").fadeTo(500,0.25, function() {
+                        $("#map-image").attr("src", new_url);
+                    }).fadeTo(250,1);
+                }
+            });
+            
+            $( "#row-3" ).click( function() {
+                var new_url = $( "#map-image" ).attr( "data-map-3" ) ;
+                var current_url = $( "#map-image" ).attr( "src" );
+                
+                if (new_url != current_url) {
+                    $("#map-image").fadeTo(500,0.25, function() {
+                        $("#map-image").attr("src", new_url);
+                    }).fadeTo(250,1);
+                }
+            });
+        });
+    </script>
 </div>
