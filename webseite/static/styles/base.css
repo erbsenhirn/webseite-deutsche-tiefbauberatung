@@ -1,5 +1,16 @@
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Bold.ttf');
+  font-weight: bold;
+}
+
 body {
-    font-family: "Open Sans";
+    font-family: OpenSans;
     color: #4a4a4a;
     hyphens: auto;
 }
