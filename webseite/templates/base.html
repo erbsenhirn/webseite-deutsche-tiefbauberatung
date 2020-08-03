@@ -20,6 +20,11 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a href="#" class="burger-menu">
+            <span class="burger-menu-line burger-menu-line-1"></span>
+            <span class="burger-menu-line burger-menu-line-2"></span>
+            <span class="burger-menu-line burger-menu-line-3"></span>
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-menu">
               {% show_menu 0 100 100 100 "menu.html" %}
@@ -33,5 +38,12 @@
           {% include 'footer.html' %}
       </footer>
       <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
+      <script>
+        $(document).ready(function () {
+          $( ".burger-menu" ).click(function() {
+              $( this ).toggleClass( "opened" );
+          });
+        });
+      </script>
     </body>
 </html>

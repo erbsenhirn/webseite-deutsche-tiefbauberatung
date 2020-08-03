@@ -20,6 +20,43 @@ nav.navbar {
     height: 100px;
 }
 
+    .burger-menu {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+        
+    .burger-menu-line::before {
+        content: "";
+        border-bottom: solid 2px black;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        transition: all 0.2s ease-out;
+    }
+    
+    .burger-menu-line-1::before {
+        top: 30%; 
+    }
+    .burger-menu.opened .burger-menu-line-1::before {
+        transform:  translateY(10px) rotate(45deg);
+    }
+    
+    .burger-menu-line-2::before {
+        top: 50%;
+        opacity: 1;
+    }
+    .burger-menu.opened .burger-menu-line-2::before {
+        opacity: 0;
+    }
+    
+    .burger-menu-line-3::before {
+        top: 70%;
+    }
+    .burger-menu.opened .burger-menu-line-3::before {
+        transform:  translateY(-10px) rotate(-45deg);
+    }
+
     .navbar-menu {
         display: flex;
         list-style: none;
@@ -71,6 +108,8 @@ nav.navbar {
     .dropdown-menu {
         border-radius: 0;
     }
+    
+    
 
 main {
     margin-top: 100px;
