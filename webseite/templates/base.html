@@ -13,23 +13,18 @@
     </head>
     <body>
         {% cms_toolbar %}
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="/">
+        <nav>
+          <a href="/">
             <img src="{% static 'images/logo-deutsche-tiefbauberatung.svg' %}" width="150" height="50" alt="Logo Deutsche Tiefbauberatung">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <a href="#" class="burger-menu">
             <span class="burger-menu-line burger-menu-line-1"></span>
             <span class="burger-menu-line burger-menu-line-2"></span>
             <span class="burger-menu-line burger-menu-line-3"></span>
           </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-menu">
-              {% show_menu 0 100 100 100 "menu.html" %}
-            </ul>
-          </div>
+          <ul class="nav-menu">
+            {% show_menu 0 100 100 100 "menu.html" %}
+          </ul>
         </nav>
         <main>
           {% block content %}{% endblock content %}
@@ -38,10 +33,12 @@
           {% include 'footer.html' %}
       </footer>
       <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
       <script>
         $(document).ready(function () {
           $( ".burger-menu" ).click(function() {
               $( this ).toggleClass( "opened" );
+              $( ".nav-menu" ).toggle("slide", {direction:"right"});
           });
         });
       </script>

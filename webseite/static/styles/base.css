@@ -15,15 +15,21 @@ body {
     hyphens: auto;
 }
 
-nav.navbar {
+nav {
     background-color: white;
-    height: 100px;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
 }
 
     .burger-menu {
         width: 50px;
         height: 50px;
-        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
     }
         
     .burger-menu-line::before {
@@ -56,32 +62,44 @@ nav.navbar {
     .burger-menu.opened .burger-menu-line-3::before {
         transform:  translateY(-10px) rotate(-45deg);
     }
-
-    .navbar-menu {
-        display: flex;
+    
+    
+    .nav-menu {
         list-style: none;
+        text-align: right;
+        /*display: flex;*/
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 50px;
+        padding: 0;
     }
-
-    .navbar-menu a {
+    
+    .nav-menu li {
+        
+    }
+  
+    .nav-menu a {
         color: #4a4a4a;
         font-weight: bold;
         font-size: 26px;
+        background-color: white;
     }
 
-    .navbar-menu a:hover {
+    .nav-menu a:hover {
         color: #1086ab;
         text-decoration: none !important;
     }
-
-    .navbar-menu>.child {
+    
+    /*
+    .nav-menu>.child {
         margin-right: 10px;
-        position: relative;
         text-transform: uppercase;
         height: 30px;
         padding: 5px;
     }
 
-    .navbar-menu>.child ul {
+    .nav-menu>.child ul {
         list-style: none;
         text-transform: none;
         position: absolute;
@@ -92,27 +110,17 @@ nav.navbar {
         width: 100%;
     }
 
-    .navbar-menu>.child .child a{
+    .nav-menu>.child .child a{
         width: 100%;
         display: inline-block;
     }
 
-    .navbar-menu>.child:not(:hover) .child {
+    .nav-menu>.child:not(:hover) .child {
         display: none;
-    }
-
-    .dropdown-toggle, .dropdown-menu {
-        border: none !important;
-    }
-
-    .dropdown-menu {
-        border-radius: 0;
-    }
-    
-    
+    }*/
 
 main {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 footer.jumbotron {
