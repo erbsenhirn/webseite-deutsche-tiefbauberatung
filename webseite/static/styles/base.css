@@ -32,36 +32,36 @@ nav {
         right: 0;
     }
         
-    .burger-menu-line::before {
-        content: "";
-        border-bottom: solid 2px black;
-        position: absolute;
-        left: 20%;
-        right: 20%;
-        transition: all 0.2s ease-out;
-    }
-    
-    .burger-menu-line-1::before {
-        top: 30%; 
-    }
-    .burger-menu.opened .burger-menu-line-1::before {
-        transform:  translateY(10px) rotate(45deg);
-    }
-    
-    .burger-menu-line-2::before {
-        top: 50%;
-        opacity: 1;
-    }
-    .burger-menu.opened .burger-menu-line-2::before {
-        opacity: 0;
-    }
-    
-    .burger-menu-line-3::before {
-        top: 70%;
-    }
-    .burger-menu.opened .burger-menu-line-3::before {
-        transform:  translateY(-10px) rotate(-45deg);
-    }
+        .burger-menu-line::before {
+            content: "";
+            border-bottom: solid 2px black;
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            transition: all 0.2s ease-out;
+        }
+        
+            .burger-menu-line-1::before {
+                top: 30%; 
+            }
+                .burger-menu.opened .burger-menu-line-1::before {
+                    transform:  translateY(10px) rotate(45deg);
+                }
+            
+            .burger-menu-line-2::before {
+                top: 50%;
+                opacity: 1;
+            }
+                .burger-menu.opened .burger-menu-line-2::before {
+                    opacity: 0;
+                }
+            
+            .burger-menu-line-3::before {
+                top: 70%;
+            }
+                .burger-menu.opened .burger-menu-line-3::before {
+                    transform:  translateY(-10px) rotate(-45deg);
+                }
     
     
     .nav-menu {
@@ -74,50 +74,50 @@ nav {
         top: 50px;
         padding: 0;
     }
+
+        .nav-menu a {
+            color: #4a4a4a;
+            background-color: white;
+            padding: 0 5px;
+        }
     
-    .nav-menu li {
+        .nav-menu a:hover {
+            color: #1086ab;
+            text-decoration: none !important;
+        }
         
-    }
-  
-    .nav-menu a {
-        color: #4a4a4a;
-        font-weight: bold;
-        font-size: 26px;
-        background-color: white;
-    }
-
-    .nav-menu a:hover {
-        color: #1086ab;
-        text-decoration: none !important;
-    }
+        .nav-menu>.child {
+            text-transform: uppercase;
+            
+            font-weight: bold;
+            font-size: 26px;
+        }
+        
+        .nav-menu>.child ul {
+            list-style: none;
+            text-transform: none;
+            font-size: 15px;
+        }
+        /*
+        .nav-menu>.child ul {
+            list-style: none;
+            text-transform: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            padding: 5px;
+            width: 100%;
+        }
     
-    /*
-    .nav-menu>.child {
-        margin-right: 10px;
-        text-transform: uppercase;
-        height: 30px;
-        padding: 5px;
-    }
-
-    .nav-menu>.child ul {
-        list-style: none;
-        text-transform: none;
-        position: absolute;
-        top: 30px;
-        left: 0;
-        background-color: white;
-        padding: 5px;
-        width: 100%;
-    }
-
-    .nav-menu>.child .child a{
-        width: 100%;
-        display: inline-block;
-    }
-
-    .nav-menu>.child:not(:hover) .child {
-        display: none;
-    }*/
+        .nav-menu>.child .child a{
+            width: 100%;
+            display: inline-block;
+        }
+    
+        .nav-menu>.child:not(:hover) .child {
+            display: none;
+        }*/
 
 main {
     margin-top: 50px;
