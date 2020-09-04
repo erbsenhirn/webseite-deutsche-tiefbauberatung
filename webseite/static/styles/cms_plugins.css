@@ -25,19 +25,21 @@
     font-size: 50px;
     bottom: 50px;
     text-shadow: 0 0 15px black;
-    padding: 0px 10px;
+    padding: 0px;
     font-weight: bold;
 }
 
 @media (max-width: 767px) {
     .parallax h1 {
         font-size: 20px;
+        padding: 0px 10px;
     }
 }
 
 .headline {
     margin-top: 40px;
     margin-bottom: 20px;
+    hyphens: none;
 }
 
 
@@ -45,8 +47,8 @@
     color: #1086ab;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 120px;
+    margin-top: -120px;
 }
 
 @media (max-width: 767px) {
@@ -54,6 +56,8 @@
         font-size: 15px;
         padding-left: 7px;
         padding-right: 7px;
+        padding-top: 80px;
+        margin-top: -80px;
     }
 }
 

@@ -27,7 +27,7 @@ nav {
 
 @media (min-width: 768px) {
     nav {
-         padding: 50px 10px; 
+         padding: 60px 10px; 
     }
 }
 
@@ -38,8 +38,9 @@ nav {
     @media (min-width: 768px) {
         .logo {
             position: relative;
-            top: -32px;
-            width: 250px; 
+            top: -25px;
+            width: 220px; 
+            left: 20px;
         }
     }
 
@@ -102,7 +103,7 @@ nav {
     @media (min-width: 768px) {
         .nav-menu {
              display: flex;   
-             top: 25px;
+             top: 42px;
              text-align: left;
              left: 300px;
              right: auto;
@@ -114,6 +115,12 @@ nav {
             background-color: white;
             padding: 0 5px;
         }
+        
+        @media (min-width: 768px) {
+            .nav-menu a {
+                margin-right: 10px;
+            }
+        }
     
         .nav-menu a:hover {
             color: #1086ab;
@@ -123,7 +130,7 @@ nav {
         .nav-menu>.child {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 26px;
+            font-size: 22px;
         }
         
         .nav-menu>.child ul {
@@ -132,14 +139,12 @@ nav {
             font-size: 15px;
             padding-left: 0;
         }
-        /*
-              */
 
         @media (min-width: 768px) {
             .nav-menu>.child ul {
-                /*position: absolute;
-                top: 30px;
-                left: 0;*/
+                position: absolute;
+                padding-bottom: 7px;
+                background-color: white;
             }
     
             .nav-menu>.child .child a{
@@ -154,7 +159,13 @@ nav {
     
 
 main {
-    margin-top: 50px;
+    margin-top: 70px;
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 120px;
+    }
 }
 
 footer.jumbotron {
@@ -170,4 +181,13 @@ footer h2 {
 
 footer a, footer a:hover {
     color: white;
+}
+
+footer .company-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+footer .copyright {
+    margin-top: 16px;
 }
