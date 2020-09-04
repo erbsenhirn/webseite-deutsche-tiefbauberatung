@@ -17,7 +17,7 @@
           <a href="/">
             <img class="logo" src="{% static 'images/logo-deutsche-tiefbauberatung.svg' %}" alt="Logo Deutsche Tiefbauberatung">
           </a>
-          <a href="#" class="burger-menu">
+          <a class="burger-menu">
             <span class="burger-menu-line burger-menu-line-1"></span>
             <span class="burger-menu-line burger-menu-line-2"></span>
             <span class="burger-menu-line burger-menu-line-3"></span>
@@ -36,8 +36,8 @@
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
       <script>
         $(document).ready(function () {
-          $( ".burger-menu" ).click(function() {
-              $( this ).toggleClass( "opened" );
+          $( ".burger-menu, .nav-menu" ).click(function() {
+              $( ".burger-menu" ).toggleClass( "opened" );
               $( ".nav-menu" ).toggle("slide", {direction:"right"});
           });
         });
