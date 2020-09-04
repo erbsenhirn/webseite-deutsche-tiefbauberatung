@@ -104,13 +104,18 @@ nav {
         .nav-menu {
              width: 100%;
              background-color: #1086ab;
+             height: calc(100vh - 70px);
+             padding-top: 50px;
+             padding-bottom: 50px;
+             overflow-y: auto;
+             position: absolute;
         }
     }
     
     @media (min-width: 768px) {
         .nav-menu {
              display: flex;   
-             top: 42px;
+             top: 45px;
              text-align: left;
              left: 300px;
              right: auto;
@@ -120,6 +125,7 @@ nav {
         .nav-menu a {
             color: white;
             padding: 0 5px;
+            transition: color 0.5s ease;
         }
         
         @media (min-width: 768px) {
@@ -138,7 +144,13 @@ nav {
         .nav-menu>.child {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 19px;
+        }
+        
+        @media (max-width: 767px) {
+            .nav-menu>.child {
+                margin-bottom: 20px;
+            }
         }
         
         .nav-menu>.child ul {
