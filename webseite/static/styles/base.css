@@ -92,12 +92,19 @@ nav {
     
     .nav-menu {
         list-style: none;
-        text-align: right;
+        text-align: center;
         display: none;
         position: fixed;
         right: 0;
-        top: 50px;
+        top: 70px;
         padding: 0;
+    }
+    
+    @media (max-width: 767px) {
+        .nav-menu {
+             width: 100%;
+             background-color: #1086ab;
+        }
     }
     
     @media (min-width: 768px) {
@@ -111,14 +118,15 @@ nav {
     }
 
         .nav-menu a {
-            color: #4a4a4a;
-            background-color: white;
+            color: white;
             padding: 0 5px;
         }
         
         @media (min-width: 768px) {
             .nav-menu a {
                 margin-right: 10px;
+                color: #4a4a4a;
+                background-color: white;
             }
         }
     
