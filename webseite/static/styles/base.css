@@ -31,6 +31,12 @@ nav {
         top: 0;
         right: 0;
     }
+    
+    @media (min-width: 768px) {
+        .burger-menu {
+             display: none;   
+        }
+    }
         
         .burger-menu-line::before {
             content: "";
@@ -67,12 +73,21 @@ nav {
     .nav-menu {
         list-style: none;
         text-align: right;
-        /*display: flex;*/
         display: none;
         position: fixed;
         right: 0;
         top: 50px;
         padding: 0;
+    }
+    
+    @media (min-width: 768px) {
+        .nav-menu {
+             display: flex;   
+             top: 5px;
+             text-align: left;
+             left: 155px;
+             right: auto;
+        }
     }
 
         .nav-menu a {
@@ -88,7 +103,6 @@ nav {
         
         .nav-menu>.child {
             text-transform: uppercase;
-            
             font-weight: bold;
             font-size: 26px;
         }
@@ -97,27 +111,28 @@ nav {
             list-style: none;
             text-transform: none;
             font-size: 15px;
+            padding-left: 0;
         }
         /*
-        .nav-menu>.child ul {
-            list-style: none;
-            text-transform: none;
-            position: absolute;
-            top: 30px;
-            left: 0;
-            background-color: white;
-            padding: 5px;
-            width: 100%;
+              */
+
+        @media (min-width: 768px) {
+            .nav-menu>.child ul {
+                /*position: absolute;
+                top: 30px;
+                left: 0;*/
+            }
+    
+            .nav-menu>.child .child a{
+                width: 100%;
+                display: inline-block;
+            }  
+            
+            .nav-menu>.child:not(:hover) .child {
+                display: none;
+            }
         }
     
-        .nav-menu>.child .child a{
-            width: 100%;
-            display: inline-block;
-        }
-    
-        .nav-menu>.child:not(:hover) .child {
-            display: none;
-        }*/
 
 main {
     margin-top: 50px;
