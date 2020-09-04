@@ -1,6 +1,6 @@
 <div class="container headline">
     <div class="row">
-        <h2>
+        <h2 {% if instance.link %} id={{  instance.link }}{% endif %}>
             {{ instance.text }}
         </h2>
     </div>

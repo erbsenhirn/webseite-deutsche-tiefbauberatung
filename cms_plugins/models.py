@@ -6,6 +6,7 @@ from django.db.models import ImageField, FileField
 
 class HeadlinePluginModel(CMSPlugin):
     text = models.CharField(max_length=128)
+    link = models.CharField(max_length=128)
 
 class ParallaxPluginModel(CMSPlugin):
     bild = ImageField(upload_to='parallax-background-images/')
