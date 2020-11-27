@@ -30,8 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '*', 
-] # TODO: Secure this 
+    '*',
+] # TODO: Secure this
 
 # Application definition
 
@@ -93,7 +93,6 @@ TEMPLATES = [
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
-                'django.template.loaders.eggs.Loader'
             ],
         },
     },
