@@ -176,15 +176,18 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+DB_USER = os.environ.get('DB_USER', 'Django')
+DB_PASSWORD = os.environ.get('DB_USER', '1236hv(7)$y')
+
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
         'NAME': os.path.join(BASE_DIR, 'project.db'),
-        'PASSWORD': '',
+        'PASSWORD': DB_PASSWORD,
         'PORT': '',
-        'USER': ''
+        'USER': DB_USER
     }
 }
 
