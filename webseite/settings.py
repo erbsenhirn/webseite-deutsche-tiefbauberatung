@@ -76,6 +76,10 @@ STATICFILES_DIRS = (
 )
 SITE_ID = 1
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
+
 
 TEMPLATES = [
     {
@@ -121,6 +125,9 @@ MIDDLEWARE = (
 )
 
 INSTALLED_APPS = (
+    'webseite',
+    'cms_plugins',
+
     'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,10 +142,6 @@ INSTALLED_APPS = (
     'menus',
     'sekizai',
     'treebeard',
-
-
-    'webseite',
-    'cms_plugins',
 )
 
 LANGUAGES = (
