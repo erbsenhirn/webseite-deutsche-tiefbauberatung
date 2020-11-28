@@ -23,10 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w%x$!38srkp!)z+=cj#nb6k9e-esn_x*d0@pq5s=n4l&@z)fb+'
+# Therefore bind the secret key to the environment variable SECRET_KEY
+SECRET_KEY = os.environ.get('SECRET_KEY','w%x$!38srkp!)z+=cj#nb6k9e-esn_x*d0@pq5s=n4l&@z)fb+')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Therefore set the environment variable DEBUG to False
+DEBUG = os.environ.get('DEBUG', '') != 'False'
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -108,6 +113,7 @@ MIDDLEWARE = (
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
