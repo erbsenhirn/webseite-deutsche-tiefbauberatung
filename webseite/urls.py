@@ -12,7 +12,6 @@ from django.views.static import serve
 from django.contrib.sites.models import Site
 
 admin.autodiscover()
-admin.site.unregister(Site)
 
 urlpatterns = [
     re_path(r'^sitemap\.xml$', sitemap,
