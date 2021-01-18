@@ -38,6 +38,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '*',
 ] # TODO: Secure this
+X_FRAME_OPTIONS = 'ALLOWALL'  # TODO: Secure this
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']  # TODO: Secure this
 
 # Application definition
 
@@ -124,7 +126,7 @@ MIDDLEWARE = (
 
 INSTALLED_APPS = (
     'whitenoise.runserver_nostatic',
-    
+
     'webseite',
     'cms_plugins',
 
