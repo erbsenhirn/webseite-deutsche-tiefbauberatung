@@ -1,4 +1,5 @@
 import os  # isort:skip
+import dj_database_url
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -177,6 +178,7 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+'''
 DB_USER = os.environ.get('DB_USER', 'Django')
 DB_PASSWORD = os.environ.get('DB_USER', '1236hv(7)$y')
 
@@ -191,6 +193,25 @@ DATABASES = {
         'USER': DB_USER
     }
 }
+'''
+
+DB_NAME = os.environ.get('DB_NAME', 'postgres')
+DB_USER = os.environ.get('DB_USER', 'postgres')
+DB_PASSWORD = os.environ.get('DB_PASSWORD', 'admin')
+DB_PORT = os.environ.get('DB_PORT', '5432')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': 'localhost',
+        'PORT': DB_PORT,
+    }
+}
+db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'].update(db_from_env)
 
 MIGRATION_MODULES = {
 
